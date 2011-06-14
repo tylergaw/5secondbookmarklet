@@ -1,4 +1,4 @@
-# 5 Second Bookmarklet
+# 5 Second Bookmarklet: [http://5secondfilms.com/bookmarklet](http://5secondfilms.com/bookmarklet/)
 
 This was a bookmarklet for quickly viewing videos from [5 Second Films](http://5secondfilms.com)
 
