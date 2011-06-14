@@ -1,0 +1,294 @@
+* { margin:0;  padding:0; }
+h1, h2, h3, h4, h5, h6 { font-size:100%; }
+li { list-style:none inside;}
+a:focus { outline:none; }
+
+body
+{
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size:medium;
+}
+
+#container
+{
+	width:529px;
+	height:502px;
+	background: transparent url(../images/marklet_bg.png) no-repeat top left;
+	margin:0 auto;
+	border:1px solid #393939;
+	border-top:none;
+	position:relative;
+	overflow:hidden;
+}
+
+#header, h1 a, #btn-close, #footer, #footer p, #footer ul li a, #controls ul li a
+{
+	background:transparent url(../images/spriteSheet.png) no-repeat top left;
+}
+
+/*----------------------------------------------- header ---------------------------------------------*/
+
+#header
+{
+	display:block;
+	height:41px;
+	background-color:#2c2c2c;
+	background-repeat: repeat-x;
+	border-bottom:1px solid #1f1f1f;
+}
+
+h1
+{
+	padding:8px 0 0 10px;
+	width:70px;
+	float:left;
+}
+
+h1 a
+{
+	display:block;
+	width:70px;
+	height:27px;
+	background-position:0 -90px;
+	text-indent:-300em;
+	opacity:0.85;
+}
+
+	h1 a:hover
+	{
+		opacity:1;
+	}
+	
+#btn-close
+{
+	position:relative;
+	top:15px;
+	right:10px;
+	float:right;
+	display:block;
+	width:53px;
+	height:12px;
+	background-position:0 -191px;
+	text-indent:-300em;
+	opacity:0.85;
+}
+
+	#btn-close:hover
+	{
+		opacity:1;
+	}
+
+/*-------------------------------------------- video container ---------------------------------------*/
+
+#video-container
+{
+	height:377px;
+}
+
+	#video-container h2
+	{
+		color:#e6e6e6;
+		font-weight:normal;
+		text-shadow: 2px 2px 0 #000000;
+		text-align:center;
+		padding:8px 0;
+	}
+	
+	#video-container #video-wrapper
+	{
+		border:1px solid #424344;
+		width:480px;
+		height:290px;
+		margin:0 auto;
+		background-color:#1e1d1e;
+		position:relative;
+	}
+	
+	#video-container #video-loading
+	{
+		font-size:80%;
+		position:relative;
+		top:110px;
+		width:100%;
+		color:#666666;
+		text-align:center;
+	}
+	
+	#video-container p
+	{
+		margin:0 auto;
+		width:478px;
+		text-align:right;
+	}
+	
+	#video-container a
+	{
+		font-size:70%;
+		color:#666666;
+		text-shadow: 1px 1px 1px #0c0c0c;
+	}
+	
+		#video-container a:hover
+		{
+			color:#ececec;
+			text-decoration:none;
+		}
+
+/*---------------------------------------------- controls --------------------------------------------*/
+
+#controls
+{
+	height:40px;
+	background-color:#1f1f1f;
+	border-top:1px solid #403f40;
+}
+	
+	#controls ul
+	{
+		padding-top:9px;
+		width:212px;
+		margin:0 auto;
+	}
+		
+	#btn-prev
+	{
+		position:relative;
+		top:3px;
+		float:left;
+		display:block;
+		padding:3px 6px 0 0;
+		margin-right:10px;
+		border-right:1px solid #787878;
+	}
+	
+	#btn-next
+	{
+		position:relative;
+		top:3px;
+		float:right;
+		display:block;
+		padding:3px 0 0 6px;
+		border-left:1px solid #787878;
+	}
+	
+	#btn-random
+	{
+		float:left;
+	}
+	
+	#controls ul li a
+	{
+		display:block;
+		float:left;
+		text-indent:-300em;
+		overflow:hidden;
+	}
+	
+	#controls ul li#btn-prev a, #controls ul li#btn-next a
+	{
+		width:50px;
+		height:14px;
+		opacity:0.8;
+	}
+		
+		#controls ul li#btn-prev a:hover, #controls ul li#btn-next a:hover
+		{
+			opacity:1;
+		}
+	
+	#controls ul li#btn-prev a
+	{
+		background-position:0px -117px;
+	}
+	
+	#controls ul li#btn-next a
+	{
+		background-position:0px -131px;
+	}
+	
+	#controls ul li#btn-random a
+	{
+		width:79px;
+		height:22px;
+		background-position:0px -146px;
+	}
+	
+		#controls ul li#btn-random a:hover
+		{
+			background-position:0px -168px;
+		}
+
+/*----------------------------------------------- footer ---------------------------------------------*/
+
+#footer
+{
+	display:block;
+	width:100%;
+	height:42px;
+	background-color:#2c2c2c;
+	background-repeat: repeat-x;
+	background-position: bottom left;
+}
+
+	#footer p
+	{
+		width:229px;
+		height:13px;
+		float:left;
+		text-indent:-300em;
+		background-position:0 -77px;
+		position:relative;
+		top:15px;
+		left:10px;
+	}
+	
+	#footer ul
+	{
+		width:85px;
+		float:right;
+		padding-top:12px;
+	}
+	
+	#footer ul li
+	{
+		float:left;
+		padding:0 3px;
+	}
+	
+	#footer ul li a
+	{
+		display:block;
+		width:18px;
+		height:18px;
+		text-indent:-300em;
+	}
+	
+	#footer #btn-twitter
+	{
+		background-position:-36px -41px;
+	}
+	
+		#footer #btn-twitter:hover
+		{
+			background-position:-36px -59px;
+		}
+		
+	#footer #btn-vimeo
+	{
+		background-position:0px -41px;
+	}
+	
+		#footer #btn-vimeo:hover
+		{
+			background-position:0px -59px;
+		}
+		
+	#footer #btn-facebook
+	{
+		background-position:-18px -41px;
+	}
+	
+		#footer #btn-facebook:hover
+		{
+			background-position:-18px -59px;
+		}

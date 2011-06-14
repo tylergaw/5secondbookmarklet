@@ -1,0 +1,241 @@
+* { margin:0;  padding:0; }
+h1, h2, h3, h4, h5, h6 { font-size:100%; }
+li { list-style:none inside;}
+a:focus { outline:none; }
+hr { display: none; }
+img { border: none; }
+
+body
+{
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size:medium;
+	background:#2c2c2c url(../images/body_bg_tile.png) repeat top left;
+	color:#c7c7c7;
+}
+
+h1 a, #content-main, #instructions, #installation ul li, #footer p
+{
+	background:transparent url(../images/spriteSheet.png) no-repeat top left;
+}
+
+#container
+{
+	width:800px;
+	background: #222222 url(../images/container_foot_bg.png) no-repeat bottom center;
+	margin:0 auto;
+	border:1px solid #373737;
+	position:relative;
+	margin-top:20px;
+	padding-bottom:9px;
+}
+
+a
+{
+	color:#666666;
+}
+
+	a:hover
+	{
+		color:#ececec;
+		text-decoration:none;
+	}
+
+/*----------------------------------------------- header ---------------------------------------------*/
+
+h1
+{
+	padding:20px 0;
+}
+
+h1 a
+{
+	display:block;
+	overflow:hidden;
+	text-indent:-300em;
+	text-decoration:none;
+	margin:0 auto;
+	width:253px;
+	height:126px;
+	opacity:0.90;
+	background-position:0 -326px;
+}
+
+	h1 a:hover
+	{
+		opacity:1;
+	}
+
+/*----------------------------------------------- content --------------------------------------------*/
+
+h2
+{
+	font-size:180%;
+	line-height:1.6em;
+	background-color:#4a4a4a;
+	border-top:1px solid #5a5a5a;
+	border-left:1px solid #5a5a5a;
+	border-right:1px solid #444444;
+	border-bottom:1px solid #444444;
+	width:87%;
+	padding:10px 25px;
+	position:relative;
+	top:-20px;
+	margin:0 auto -20px auto;
+	color:#fff;
+	text-shadow: 1px 1px 1px #000000;
+}
+
+#content-main
+{
+	height:316px;
+}
+
+#instructions
+{
+	font-weight:bold;
+	font-size:140%;
+	text-align:center;
+	width:68%;
+	margin:35px auto 0 auto;
+	text-shadow: 1px 1px 1px #000000;
+	background-position:-620px -435px;
+}
+
+	#instructions em
+	{
+		font-style:normal;
+		font-size:70%;
+	}
+
+/*------------------------------------------- installation -------------------------------------------*/
+	
+#installation
+{
+	background: transparent url(../images/install_bg_tile.png) repeat-y top center;
+	font-size:80%;
+	padding:10px 20px;
+}
+
+	#installation h4 a
+	{
+		text-decoration:none;
+		font-size:110%;
+		display:block;
+	}
+	
+	#installation ul
+	{
+		font-size:95%;
+		padding:5px 8px;
+		margin-top:4px;
+		border-top:1px solid #666666;
+		overflow:hidden;
+	}
+	
+	#installation ul li
+	{
+		padding:15px 0 15px 70px;
+		border-bottom:1px solid #262626;
+	}
+	
+		#installation ul li:last-child
+		{
+			border:none;
+		}
+	
+	#installation ul li h5
+	{
+		color:#666666;
+		padding-bottom:2px;
+	}
+	
+		#installation ul li#install-firefox
+		{
+			background-position:5px -500px;
+		}
+		
+		#installation ul li#install-safari
+		{
+			background-position:5px -600px;
+		}
+		
+		#installation ul li#install-ie
+		{
+			background-position:5px -680px;
+		}
+	
+	#installation li ol li
+	{
+		color:#f4f4f4;
+		background-image:none;
+		padding:2px 0;
+		list-style:decimal inside;
+		border-bottom:none;
+	}
+
+/*----------------------------------------------- footer ---------------------------------------------*/
+
+#footer
+{
+	width:800px;
+	text-align:center;
+	margin:0 auto;
+	padding:25px 0 3px 0;
+}
+
+	#footer p
+	{
+		width:323px;
+		height:18px;
+		overflow:hidden;
+		text-indent:-300em;
+		background-position:0 -452px;
+		margin:0 auto 25px auto;
+	}
+	
+	#footer a
+	{
+		color:#5b5b5b;
+		text-decoration:none;
+		font-size:70%;
+	}
+	
+		#footer a:hover
+		{
+			color:#ececec;
+		}
+		
+/*-------------------------------------------- Tooltip -----------------------------------------------*/
+
+div.tooltip
+{
+	position:absolute;
+	font-size:95%;
+	width:263px;
+	line-height:1.5em;
+	color:#000;
+}
+
+	div.tooltip p
+	{
+		padding:15px 15px 0 20px;
+		background:transparent url(../images/tooltip_bg_top.png) no-repeat left top;
+	}
+
+	div.tooltip span
+	{
+		display:block;
+		width:100%;
+		height:30px;
+		background:transparent url(../images/tooltip_bg_btm.png) no-repeat left bottom;
+	}
+
+	div.tooltip.exploder p
+	{
+		background-image:url(../images/tooltip_bg_top.gif);
+	}
+
+	div.tooltip.exploder span
+	{
+		background-image:url(../images/tooltip_bg_btm.gif);
+	}
